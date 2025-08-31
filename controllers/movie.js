@@ -17,8 +17,8 @@ export const getMovies = async (req, res)=> {
     let movies = await Movies.find();
     res.json({
         msg: 'All Movies Here',
-        movies,
         Movie_Collection: movies.length,
+        movies,
         status: true
     })
 };
