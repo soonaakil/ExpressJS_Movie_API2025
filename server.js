@@ -17,8 +17,10 @@ mongoose.connect('mongodb+srv://aakilamity:YeoJ4EC4rF3a4fuL@cluster0.g2450yg.mon
 //Home route
 app.get('/', (req, res)=> {
     res.send({
-        msg: "You are a home page now..",
-        status: true
+      name: "Movie API",
+      description: "API for searching and managing movies",
+      routes: ["/movies", "/movies/add"],
+      status: true
     })
 })
 //get movie
